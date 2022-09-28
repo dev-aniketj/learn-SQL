@@ -21,7 +21,7 @@ gender char(1),
 doa date,
 city varchar(20));
 
-# insert all in once
+# insert all data in once
 insert into Students values
 (101, "aniket", 22, "M", "2016-10-12", "ajmer"),
 (102, "chirag", 21, "M", "2016-10-05", "jaipur"),
