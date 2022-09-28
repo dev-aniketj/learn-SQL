@@ -29,7 +29,7 @@ insert into Students values
 
 select * from students;
 
-# insert data in a single time
+# insert data one by one
 insert into Students
 values(104, "ayush", 24, "M", "2016-09-30", "ajmer");
 
