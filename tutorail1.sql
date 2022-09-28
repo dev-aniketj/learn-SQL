@@ -3,7 +3,7 @@ use example1;
 
 # Numeric functions
 select abs(-22);
-select mod(11, 3) as remairnder;
+select mod(11, 3) as remainder;
 select power(4,2);
 select sqrt(144);
 select greatest(2,5,10,7,12,11);
@@ -26,11 +26,25 @@ insert into Students values
 (101, "aniket", 22, "M", "2016-10-12", "ajmer"),
 (102, "chirag", 21, "M", "2016-10-05", "jaipur"),
 (103, "chinmay", 22, "M", "2016-10-10", "kota");
-
 select * from students;
 
 # insert data one by one
 insert into Students
 values(104, "ayush", 24, "M", "2016-09-30", "ajmer");
+select * from students;
+
+# Where 
+select * from students where age>20 and age<=22;
+select * from students where city="ajmer";
+select id,age,name,city from students where city="ajmer";
+select * from students where not city="ajmer";
+select * from students where city!="ajmer";
+
+# Group by
+select city,count(gender) as total_students 
+from students group by city;
+
+# Update
+update students set gender=null where id=104;
 
 select * from students;
