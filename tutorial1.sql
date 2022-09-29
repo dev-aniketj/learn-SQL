@@ -46,5 +46,5 @@ from students group by city;
 
 # Update
 update students set gender=null where id=104;
-
 select * from students;
+
