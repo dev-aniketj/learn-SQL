@@ -47,7 +47,7 @@ from students group by city;
 # Having
 select city as "City", count(gender) as "Total Genders"
 from students group by city 
-having count(gender) >= 2;
+having count(gender) > 1;
 
 # Order by
 select * from students order by city;
