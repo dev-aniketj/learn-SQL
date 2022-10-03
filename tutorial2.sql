@@ -76,5 +76,15 @@ select * from employee order by e_age desc;
 select * from employee limit 3;
 
 # GROUP BY - it is used to get aggregate result with respect to group.
+select avg(e_salary), e_gender from employee group by e_gender;
+select avg(e_age), e_gender from employee group by e_gender;
+select avg(e_age), e_dept from employee group by e_dept order by avg(e_age) desc;
+
+# HAVING 
+select e_dept, avg(e_salary) as avg_salary from employee group by e_dept having avg(e_salary) > 85000;
+
+# UPDATE
+select * from employee;
+update employee set e_age=25 where e_id=6;
 
 
